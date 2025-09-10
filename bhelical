@@ -1,0 +1,13 @@
+f=400e6;
+c=3e8;
+lambda=c/f;
+C_ratio=0.2;
+h_ratio=0.05;
+C=C_ratio*lambda;
+h=h_ratio*lambda;
+radius=C/(2*%pi);
+turns=5;
+disp("C: "+string(C)+" m");
+disp("h: "+string(h)+" m");
+disp("Radius: "+string(radius)+" m");
+disp("Turns: "+string(turns));
