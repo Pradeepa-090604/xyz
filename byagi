@@ -1,0 +1,17 @@
+f=input("Enter operating frequency (MHz): ")*1e6;
+c=3e8;
+lambda=c/f;
+L_ref=0.5*lambda;
+L_dir=0.47*lambda;
+s_ref=0.2*lambda;
+s_dir=0.3*lambda;
+L_driver=0.5*lambda;
+printf("\n--- Yagi-Uda Antenna Dimensions ---\n");
+printf("Operating Frequency: %.2f MHz\n",f/1e6);
+printf("Wavelength: %.3f m\n",lambda);
+printf("Reflector Length: %.3f m\n",L_ref);
+printf("Driven Element Length: %.3f m\n",L_driver);
+printf("Director Length: %.3f m\n",L_dir);
+printf("Reflector Spacing: %.3f m\n",s_ref);
+printf("Director Spacing: %.3f m\n",s_dir);
+printf("Note: These are approximate values. Fine-tuning may be needed.\n");
