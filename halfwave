@@ -13,9 +13,9 @@ G_lin = eta * D_lin;
 G_dBi = 10*log10(G_lin);
 mprintf("Half-wave dipole analysis\n");
 mprintf("------------------------\n");
-mprintf("Efficiency (η): %.4f\n", eta);
+mprintf("Efficiency: %.4f\n", eta);
 mprintf("Directivity (linear): %.6f\n", D_lin);
 mprintf("Directivity (dBi): %.3f dBi\n", D_dBi);
 mprintf("Gain (linear): %.6f\n", G_lin);
 mprintf("Gain (dBi): %.3f dBi\n", G_dBi);
-mprintf("\nReference (theory): D ≈ 1.64 (≈ 2.15 dBi) for ideal λ/2 dipole\n");
+
