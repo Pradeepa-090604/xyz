@@ -1,0 +1,15 @@
+f0=2.4e9;
+er=4.4;
+h=1.6e-3;
+c=3e8;
+eff_er=(er+1)/2+(er-1)/2*(1+12*h/(c/f0))^(-0.5);
+L_eff=c/(2*f0*sqrt(eff_er));
+delta_L=0.412*h*((eff_er+0.3)*((c/f0)/h+0.264))/((eff_er-0.258)*((c/f0)/h+0.8));
+L=L_eff-2*delta_L;
+W=c/(2*f0)*sqrt(2/(er+1));
+disp("f0: "+string(f0/1e9)+" GHz");
+disp("eff_er: "+string(eff_er));
+disp("L_eff: "+string(L_eff*1000)+" mm");
+disp("delta_L: "+string(delta_L*1000)+" mm");
+disp("L: "+string(L*1000)+" mm");
+disp("W: "+string(W*1000)+" mm");
