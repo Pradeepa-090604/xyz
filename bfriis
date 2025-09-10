@@ -1,0 +1,14 @@
+Pt_dBm=input("Pt (dBm): ");
+Gt_dB=input("Gt (dB): ");
+Gr_dB=input("Gr (dB): ");
+f=input("f (Hz): ");
+d=input("d (m): ");
+c=3e8;
+lambda=c/f;
+Pt=10^(Pt_dBm/10)*1e-3;
+Gt=10^(Gt_dB/10);
+Gr=10^(Gr_dB/10);
+Pr=Pt*Gt*Gr*(lambda/(4*%pi*d))^2;
+Pr_dBm=10*log10(Pr/1e-3);
+disp("Pr (W): "+string(Pr));
+disp("Pr (dBm): "+string(Pr_dBm));
